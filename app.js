@@ -8,8 +8,11 @@ boton.addEventListener("click",esNumPrimo)
 
 function esNumPrimo(){
     let num = Number(numero.value)
-    if (num == 1){
-        parrafo.textContent = "Número no válido"
+    if (isNaN(num)){
+        parrafo.textContent = "Caracter no válido"
+    }
+    else if(num==1){
+        parrafo.textContent = "El número no es primo"
     }
     else{
         esPrimo = true
@@ -23,7 +26,7 @@ function esNumPrimo(){
             parrafo.textContent = "El número es primo"
         }
        
-      else if (esPrimo== false){
+        else if (esPrimo== false){
         parrafo.textContent = "El número no es primo"
 
       }
