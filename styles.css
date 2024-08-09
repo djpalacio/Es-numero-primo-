@@ -6,7 +6,7 @@
 }
 
 body{
-    height: 90vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,8 +14,8 @@ body{
 
 .container{
     padding-top: 30px;
-    width: 50vw;
-    height: 45vh;
+    max-width: 800px; /* Añade un ancho máximo */
+    height: 450px;
     background-color: rgba(148, 208, 252, 0.301);
     border-radius: 19px;
     display: flex;
@@ -23,7 +23,7 @@ body{
     align-items: center;
     box-shadow: 12px 22px 15px -3px rgba(0,0,0,0.1);
     flex-wrap: nowrap;
-    
+   
     
 }
 
@@ -61,18 +61,16 @@ h1{
 
 @media (max-width: 768px) {
     .container {
-        width: 90%;
+        width: 100vw;
+        height: 100vh;
         padding-top: 20px;
-        height: 80vh;
+        justify-content: center;
+        
     }
 }
 
 @media (max-width: 480px) {
-    .container {
-        width: 95%;
-        padding-top: 10px;
-    }
-
+    
     .resultado{
         text-align: center;
 
